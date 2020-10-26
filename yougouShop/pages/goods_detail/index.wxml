@@ -1,0 +1,17 @@
+<view class="detail_swiper">
+  <swiper indicator-dots circular>
+    <swiper-item wx:for="{{goodsObject.pics}}" wx:key="pics_id">
+      <navigator >
+        <image mode="widthFix" src="{{item.pics_mid}}" />
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="goods_price">￥{{goodsObject.goods_price}}</view>
+<view class="goods_name_row">
+  <view class="goods_name">{{goodsObject.goods_name}}</view>
+  <view class="goods_collect">
+    <text class="iconfont icon-shoucang"></text>
+    <view class="collect_text">收藏</view>
+  </view>
+</view>
